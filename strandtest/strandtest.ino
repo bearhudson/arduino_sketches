@@ -28,18 +28,18 @@ void setup() {
 
 void loop() {
   // Fill along the length of the strip in various colors...
-  int red = random(0,255);
-  int green = random(0,255);
-  int blue = random(0,255);
-  colorWipe(strip.Color(red, green, blue), 400);
-  red = random(0,255); 
-  colorWipe(strip.Color(red, green, blue), 400);
-  green = random(0,255); 
-  colorWipe(strip.Color(red, green, blue), 400);
-  blue = random(0,255);
-  colorWipe(strip.Color(red, green, blue), 400);
-  rainbow(60);             // Flowing rainbow cycle along the whole strip
-  theaterChaseRainbow(50); // Rainbow-enhanced theaterChase variant
+  int red = random(0,128);
+  int green = random(0,128);
+  int blue = random(0,128);
+  colorWipe(strip.Color(red, green, blue), 100);
+  red = random(0,128); 
+  colorWipe(strip.Color(red, green, blue), 500);
+  green = random(0,128); 
+  colorWipe(strip.Color(red, green, blue), 1000);
+  blue = random(0,128);
+  colorWipe(strip.Color(red, green, blue), 2000);
+  rainbow(2000);             // Flowing rainbow cycle along the whole strip
+  theaterChaseRainbow(500); // Rainbow-enhanced theaterChase variant
 }
 
 
